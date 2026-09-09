@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: canary-content
+data:
+  index.html: |
+    <html><body style="background:#f39c12;color:white;text-align:center;">
+    <h1>CANARY VERSION - v2.1-beta</h1></body></html>

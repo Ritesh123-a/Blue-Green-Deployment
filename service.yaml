@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-service
+spec:
+  selector:
+    app: web
+    version: blue        # <- switch this value to cut over
+  ports:
+    - port: 80
+      targetPort: 80
+  type: NodePort

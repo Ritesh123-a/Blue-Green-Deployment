@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: green-content
+data:
+  index.html: |
+    <html><body style="background:#2ecc71;color:white;text-align:center;">
+    <h1>GREEN VERSION - v2.0</h1></body></html>
